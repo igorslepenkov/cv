@@ -1,0 +1,25 @@
+@use "../media.scss";
+@use "../color.scss";
+@use "../fonts.scss";
+
+.info {
+  &__section {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+
+  &__subtitle {
+    @include fonts.subtitle;
+    color: color.$pink-light;
+  }
+
+  &__general {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 16px;
+    color: color.$black;
+    background-color: color.$grey;
+    @include fonts.body-large;
+  }
+}

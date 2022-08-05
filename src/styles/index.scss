@@ -1,0 +1,16 @@
+@use "./components/_header.scss";
+@use "./components/_general.scss";
+@use "./components/_education.scss";
+@use "./components/_courses.scss";
+@use "./components/_experience.scss";
+@use "./components/_skills.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}

@@ -1,0 +1,35 @@
+@use "../media.scss";
+@use "../color.scss";
+@use "../fonts.scss";
+
+.info {
+  &__courses {
+    display: flex;
+    flex-direction: column;
+
+    .courses__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      .courses__item {
+        display: flex;
+        flex-direction: column;
+        p:nth-child(1) {
+          margin-bottom: 0;
+          @include fonts.h3;
+          color: color.$dark-blue;
+        }
+
+        p:nth-child(2) {
+          margin-top: 0;
+          @include fonts.body-regular;
+          color: color.$black;
+        }
+      }
+    }
+  }
+}

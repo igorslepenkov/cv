@@ -1,0 +1,56 @@
+@use "../media.scss";
+@use "../color.scss";
+@use "../fonts.scss";
+
+.profile {
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+
+    .info__photo {
+      height: 150px;
+      width: 175px;
+      border-radius: 50%;
+
+      @include media.sm {
+        height: 175px;
+        width: 200px;
+      }
+
+      @include media.md {
+        height: 200px;
+        width: 225px;
+      }
+    }
+
+    .info__text {
+      p:nth-child(1) {
+        margin: 0;
+        color: color.$dark-blue;
+        @include fonts.h1;
+      }
+      p:nth-child(2) {
+        color: color.$pink-light;
+        @include fonts.subtitle;
+      }
+    }
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5%;
+    padding: 0;
+  }
+
+  &__link {
+    display: flex;
+    a {
+      color: color.$black;
+      text-decoration: none;
+      @include fonts.body-light;
+    }
+  }
+}

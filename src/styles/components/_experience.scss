@@ -1,0 +1,48 @@
+@use "../media.scss";
+@use "../color.scss";
+@use "../fonts.scss";
+
+.info {
+  &__experience {
+    display: flex;
+    flex-direction: column;
+
+    .experience__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .experience__item {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-gap: 16px;
+
+        .item__title {
+          grid-column: 1/3;
+          margin-bottom: 0;
+          @include fonts.h3;
+          color: color.$dark-blue;
+        }
+
+        .item__company {
+          margin: 0;
+          @include fonts.body-regular;
+          color: color.$black;
+        }
+
+        .item__date {
+          margin: 0;
+          @include fonts.body-light;
+          color: color.$black;
+        }
+
+        .item__duties {
+          grid-column: 1/3;
+          @include fonts.body-regular;
+          color: color.$black;
+        }
+      }
+    }
+  }
+}

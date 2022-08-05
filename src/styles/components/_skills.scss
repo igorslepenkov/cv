@@ -1,0 +1,23 @@
+@use "../media.scss";
+@use "../color.scss";
+@use "../fonts.scss";
+
+.info {
+  &__skills {
+    display: flex;
+    flex-direction: column;
+
+    .skills__section {
+      h3 {
+        @include fonts.h3;
+        color: color.$dark-blue;
+      }
+
+      p,
+      ul {
+        @include fonts.body-light;
+        color: color.$black;
+      }
+    }
+  }
+}
