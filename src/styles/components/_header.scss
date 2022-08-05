@@ -52,5 +52,14 @@
       text-decoration: none;
       @include fonts.body-light;
     }
+
+    a:hover {
+      color: color.$pink-light;
+    }
+
+    a:active {
+      color: color.$pink;
+      text-decoration: underline;
+    }
   }
 }
