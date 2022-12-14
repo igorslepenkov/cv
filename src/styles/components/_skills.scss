@@ -19,5 +19,21 @@
         color: color.$black;
       }
     }
+
+    .certificates_list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .certificate-link {
+        @include fonts.h3;
+        text-decoration: none;
+        color: color.$black;
+
+        &:hover {
+          color: color.$pink-light;
+        }
+      }
+    }
   }
 }

@@ -47,10 +47,11 @@
 
   &__link {
     display: flex;
+    color: color.$black;
+    @include fonts.body-light;
     a {
-      color: color.$black;
+      color: inherit;
       text-decoration: none;
-      @include fonts.body-light;
     }
 
     a:hover {
