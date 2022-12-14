@@ -332,6 +332,10 @@
   display: grid;
 }
 
+.info__experience .experience__list .experience__item:last-child {
+  border-bottom: none;
+}
+
 .info__experience .experience__list .experience__item .item__title {
   letter-spacing: -.03em;
   color: #2d3e5b;
